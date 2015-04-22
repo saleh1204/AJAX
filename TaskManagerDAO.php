@@ -11,7 +11,7 @@ class TaskManagerDAO {
 
     private function getDBConnection() {
         if (!isset($_mysqli)) {
-            $_mysqli = new mysqli("localhost", "root", "", "taskmanager");
+            $_mysqli = new mysqli("localhost", "root", "nobody", "taskmanager");
             if ($_mysqli->errno) {
                 printf("Unable to connect: %s", $_mysqli->error);
                 exit();
