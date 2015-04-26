@@ -13,6 +13,7 @@ class Request {
     public function __construct() {
         if (!empty($_POST)) $this->request = $_POST;
         if (!empty($_GET)) $this->request = $_GET;
+        // A constructor
     }
     
     public function get($name) {
