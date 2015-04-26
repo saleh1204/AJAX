@@ -9,6 +9,7 @@ class Action_Delete implements Action {
         $lst = $request->get("taskid");
         foreach ($lst as $id) {
             $dao->deleteTask($id);
+            ///This is going to be a long night :)
         }
         
         header("Location: tasklist.php"); 
