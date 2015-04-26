@@ -13,6 +13,7 @@ class Action_Add implements Action {
         $more = $request->get("more");
         if ($description !== "") {
             $dao->addTask($description, $type, $duedate, $more);
+/// Ibrahim
         }
         header("Location: tasklist.php");
     }
