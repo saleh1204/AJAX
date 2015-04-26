@@ -11,7 +11,7 @@ class Action_Delete implements Action {
             $dao->deleteTask($id);
             ///This is going to be a long night :)
         }
-        
+        //Hahhahahahahhahaha
         header("Location: tasklist.php"); 
     }
 
